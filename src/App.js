@@ -13,7 +13,6 @@ import React from 'react';
 import ThemeContext from './context/ThemeContext';
 import AppLeftBar from './components/template/app/appLeftBar/AppLeftBar';
 import {
-  
   Outlet
 } from "react-router-dom";
 
@@ -54,7 +53,8 @@ function App() {
             mode: themeMode,
             menuOpen,
             background: {
-              default: "#F9F9FA"
+              default: "#FFFFFF"
+              // default: "#F9F9F9"
             }
           })
         },

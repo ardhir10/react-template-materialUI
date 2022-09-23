@@ -18,7 +18,7 @@ export default function CardMonitoring(props) {
         variant="outlined"
         sx={{
           borderRadius: "20px",
-          boxShadow: 1,
+          border:'0px',
           backgroundColor: (theme.palette.mode === 'dark' && "#373737"),
         }}
       >

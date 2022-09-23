@@ -5,7 +5,6 @@ import CardMonitoring from '../../components/template/component/card/CardMonitor
 import { useEffect, useReducer } from "react";
 
 import io from "socket.io-client";
-const socket = io("https://sockettelkomwater.grootech.id");
 
 
 const breadcrumbs = [
@@ -40,7 +39,7 @@ function reducer(state, action) {
 const PageDashboard = () => {
   const [state, dispatch] = useReducer(reducer, {});
   useEffect(() => {
- 
+    const socket = io("https://sockettelkomwater.grootech.id");
     socket.on("eh-water", (d) => {
       for (const key in d) {
         if (Object.hasOwnProperty.call(d, key)) {

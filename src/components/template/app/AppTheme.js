@@ -4,7 +4,8 @@
 const AppTheme = {
   palette: {
     primary: {
-      main: '#279B92',
+      // main: '#279B92',
+      main: '#0761D4',
     }
   },
   components: {
@@ -22,13 +23,7 @@ const AppTheme = {
         },
       },
     },
-    MuiCard: {
-      styleOverrides: {
-        root: {
-          background : 'red'
-        },
-      },
-    },
+   
   },
 };
 

@@ -1,20 +1,20 @@
 import { Box } from '@mui/system';
 import React from 'react';
-import { useTheme } from '@emotion/react';
-
-
+import { useTheme ,} from '@emotion/react';
 const AppMainPage = (props) => {
     const theme  = useTheme();
+    
     return (
       <Box
+        height="100vh"
         position="realtive"
         component="main"
         sx={{
           flexGrow: 1,
-          p: 3,
-          [theme.breakpoints.only("sm")]: {
-            p: 2,
-          },
+          // p: 3,
+          // [theme.breakpoints.only("sm")]: {
+          // p: 2,
+          // },
           marginLeft: "60px",
           // marginTop: "60px",
           ...(theme.palette.menuOpen && {

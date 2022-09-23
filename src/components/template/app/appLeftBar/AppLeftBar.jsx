@@ -2,7 +2,6 @@ import * as React from "react";
 import { styled } from "@mui/material/styles";
 import Box from "@mui/material/Box";
 import MuiDrawer from "@mui/material/Drawer";
-import Divider from "@mui/material/Divider";
 
 import AppLeftBarMenu from "./AppLeftBarMenu";
 
@@ -60,10 +59,9 @@ export default function AppLeftBar() {
     <Box sx={{ display: "flex" }}>
       <Drawer
         variant="permanent"
-        PaperProps={{ elevation: 1, style: { border: "none" } }}
+        PaperProps={{ elevation: 0 }}
       >
         <DrawerHeader></DrawerHeader>
-        <Divider />
         <AppLeftBarMenu></AppLeftBarMenu>
       </Drawer>
     </Box>
