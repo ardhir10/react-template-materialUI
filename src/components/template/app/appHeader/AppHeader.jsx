@@ -35,7 +35,7 @@ export default function AppHeader(props) {
   const themeMode = React.useContext(ThemeContext);
 
   return (
-    <AppBar position="sticky" color="primary">
+    <AppBar position="fixed" color="primary">
       <Toolbar sx={{ py: 0.5 }}>
         <IconButton
           edge="start"

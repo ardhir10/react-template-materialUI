@@ -5,7 +5,7 @@ import {
   Grid,
   Typography,
 } from "@mui/material";
-import React from "react";
+import React, { useEffect } from "react";
 import { NavLink } from "react-router-dom";
 import BreadCrumbs from "../../components/template/component/breadcrumb/BreadCrumb";
 
@@ -31,7 +31,9 @@ const breadcrumbs = [
 ];
 
 const PageStarter = () => {
-  
+  useEffect(() => {
+    document.title =  process.env.REACT_APP_NAME+" - Page Starter";
+  }, []);
   return (
     <Box>
       {/* HEADER */}
